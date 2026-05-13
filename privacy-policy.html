@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinly — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:  #3b82f6;
+      --bg:      #ffffff;
+      --surface: #f8fafc;
+      --border:  #e2e8f0;
+      --text:    #1e293b;
+      --muted:   #64748b;
+      --radius:  10px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+                   Arial, "Noto Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    /* ── Sticky nav ─────────────────────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: saturate(180%) blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    nav ul {
+      display: flex;
+      gap: 4px;
+      list-style: none;
+      max-width: 800px;
+      margin: 0 auto;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    nav ul::-webkit-scrollbar { display: none; }
+    nav a {
+      display: block;
+      padding: 14px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color .15s, border-color .15s;
+    }
+    nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+    /* ── Page wrapper ───────────────────────────────────────────────────── */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    /* ── Language section ───────────────────────────────────────────────── */
+    .lang-section {
+      padding-top: 72px;
+      margin-top: -72px; /* offset for sticky nav */
+    }
+    .lang-section + .lang-section {
+      border-top: 1px solid var(--border);
+      margin-top: 64px;
+      padding-top: 128px;
+    }
+
+    /* ── Typography ─────────────────────────────────────────────────────── */
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .app-icon {
+      width: 56px; height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #4fc3be 0%, #44a4e0 40%, #a33f8d 70%, #eda31b 100%);
+      flex-shrink: 0;
+    }
+    .app-header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    .app-header p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 36px;
+      margin-bottom: 10px;
+      padding-left: 12px;
+      border-left: 3px solid var(--accent);
+    }
+    p { margin-bottom: 12px; color: var(--text); }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #eff6ff;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .badge svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 32px;
+    }
+    .contact-box h2 { margin-top: 0; border: none; padding: 0; font-size: 15px; color: var(--muted); }
+    .contact-box a { color: var(--accent); text-decoration: none; }
+    .contact-box a:hover { text-decoration: underline; }
+
+    .updated {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 16px 64px; }
+      .app-header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#en">English</a></li>
+    <li><a href="#zh">简体中文</a></li>
+    <li><a href="#de">Deutsch</a></li>
+    <li><a href="#es">Español</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- ENGLISH                                                             -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="lang-section" id="en">
+    <div class="app-header">
+      <div class="app-icon"></div>
+      <div>
+        <h1>Pinly — Privacy Policy</h1>
+        <p class="updated">Last updated: May 2026</p>
+      </div>
+    </div>
+
+    <div class="badge">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg>
+      Privacy First — Your data stays on your device &amp; iCloud.
+    </div>
+
+    <h2>Overview</h2>
+    <p>Pinly ("we", "our", or "the app") is a personal bookmark manager. We are committed to protecting your privacy. This policy explains what data Pinly handles, where it is stored, and how it is used.</p>
+
+    <h2>Data We Do Not Collect</h2>
+    <p>We do not collect, transmit, or store any personal information on our own servers. This includes:</p>
+    <ul>
+      <li>Your name, email address, or any identity information</li>
+      <li>Your bookmarks, URLs, titles, or notes</li>
+      <li>Your device identifiers or usage statistics</li>
+    </ul>
+    <p>We have absolutely no access to your saved content.</p>
+
+    <h2>On-Device &amp; iCloud Storage</h2>
+    <p>All bookmarks, titles, descriptions, and preview images are stored exclusively in two places:</p>
+    <ul>
+      <li><strong>Your device</strong> — via SwiftData local storage</li>
+      <li><strong>Your private iCloud container</strong> — managed entirely by Apple under your Apple ID</li>
+    </ul>
+    <p>Synchronisation between your devices happens through Apple's CloudKit framework. Pinly never has access to this data in transit or at rest.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>When you save a bookmark, Pinly may fetch a preview image or metadata for that URL. This network request originates <strong>directly from your device</strong> to the relevant service (e.g., Google Maps, Instagram). Pinly does not act as an intermediary or proxy. No data is routed through our servers.</p>
+    <p>If you save a Google Maps location, preview data may be fetched from Google's servers. This is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. No precise location data is sent to Google; only the URL you explicitly saved.</p>
+
+    <h2>No Ads or Analytics</h2>
+    <p>Pinly contains no third-party advertising SDKs, no analytics frameworks (e.g., Firebase, Mixpanel), and no crash-reporting tools that transmit data off-device. No usage data is shared with any third party.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>Pinly does not knowingly collect data from children under 13. Since we collect no personal data at all, the app is compliant by design.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we make significant changes to this Privacy Policy, we will update the "Last updated" date above. Continued use of the app constitutes acceptance of the updated policy.</p>
+
+    <div class="contact-box">
+      <h2>Contact</h2>
+      <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+      <p><strong>Developer:</strong> Rita Wu<br>
+         <strong>Email:</strong> <a href="mailto:pinly.app@icloud.com">pinly.app@icloud.com</a></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- SIMPLIFIED CHINESE                                                  -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="lang-section" id="zh">
+    <div class="app-header">
+      <div class="app-icon"></div>
+      <div>
+        <h1>Pinly — 隐私政策</h1>
+        <p class="updated">最后更新：2026 年 5 月</p>
+      </div>
+    </div>
+
+    <div class="badge">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg>
+      隐私优先 — 您的数据仅存储在设备和 iCloud 中。
+    </div>
+
+    <h2>概述</h2>
+    <p>Pinly（以下简称"我们"或"本应用"）是一款个人书签管理工具。我们致力于保护您的隐私。本政策说明 Pinly 处理哪些数据、数据存储在何处以及如何使用。</p>
+
+    <h2>我们不收集的数据</h2>
+    <p>我们不在自有服务器上收集、传输或存储任何个人信息，包括但不限于：</p>
+    <ul>
+      <li>您的姓名、电子邮件地址或任何身份信息</li>
+      <li>您的书签、URL、标题或备注</li>
+      <li>您的设备标识符或使用统计数据</li>
+    </ul>
+    <p>我们无法访问您保存的任何内容。</p>
+
+    <h2>设备本地存储与 iCloud 存储</h2>
+    <p>所有书签、标题、描述及预览图片均仅存储在以下两处：</p>
+    <ul>
+      <li><strong>您的设备</strong> — 通过 SwiftData 本地存储</li>
+      <li><strong>您的私有 iCloud 容器</strong> — 完全由 Apple 以您的 Apple ID 管理</li>
+    </ul>
+    <p>设备间的同步通过 Apple 的 CloudKit 框架进行。Pinly 在数据传输或存储的任何阶段均无法访问这些数据。</p>
+
+    <h2>第三方服务</h2>
+    <p>当您保存书签时，Pinly 可能会为该 URL 获取预览图片或元数据。此网络请求<strong>直接从您的设备</strong>发送至相关服务商（如 Google 地图、Instagram），Pinly 不充当中间人或代理，数据不会经过我们的服务器。</p>
+    <p>若您保存 Google 地图位置，预览数据可能从 Google 服务器获取，受 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a>约束。我们不会向 Google 发送精确位置信息，仅使用您明确保存的 URL。</p>
+
+    <h2>无广告与无数据分析</h2>
+    <p>Pinly 不包含任何第三方广告 SDK、数据分析框架（如 Firebase、Mixpanel）或将数据传输至设备外部的崩溃上报工具。您的使用数据不会与任何第三方共享。</p>
+
+    <h2>儿童隐私</h2>
+    <p>Pinly 不会故意收集 13 岁以下儿童的数据。由于我们根本不收集任何个人数据，本应用在设计上即满足儿童隐私保护要求。</p>
+
+    <h2>政策变更</h2>
+    <p>若我们对本隐私政策作出重要修改，将更新上方的"最后更新"日期。继续使用本应用即视为接受更新后的政策。</p>
+
+    <div class="contact-box">
+      <h2>联系我们</h2>
+      <p>如您对本隐私政策有任何疑问或顾虑，请通过以下方式联系我们：</p>
+      <p><strong>开发者：</strong>Rita Wu<br>
+         <strong>邮箱：</strong><a href="mailto:pinly.app@icloud.com">pinly.app@icloud.com</a></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- GERMAN                                                              -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="lang-section" id="de">
+    <div class="app-header">
+      <div class="app-icon"></div>
+      <div>
+        <h1>Pinly — Datenschutzerklärung</h1>
+        <p class="updated">Zuletzt aktualisiert: Mai 2026</p>
+      </div>
+    </div>
+
+    <div class="badge">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg>
+      Datenschutz zuerst – Ihre Daten bleiben auf Ihrem Gerät &amp; in iCloud.
+    </div>
+
+    <h2>Überblick</h2>
+    <p>Pinly („wir", „unsere" oder „die App") ist ein persönlicher Lesezeichenmanager. Wir verpflichten uns zum Schutz Ihrer Privatsphäre. Diese Erklärung beschreibt, welche Daten Pinly verarbeitet, wo sie gespeichert werden und wie sie verwendet werden.</p>
+
+    <h2>Daten, die wir nicht erheben</h2>
+    <p>Wir erheben, übermitteln oder speichern keine personenbezogenen Daten auf unseren eigenen Servern. Dazu gehören:</p>
+    <ul>
+      <li>Ihr Name, Ihre E-Mail-Adresse oder sonstige Identitätsdaten</li>
+      <li>Ihre Lesezeichen, URLs, Titel oder Notizen</li>
+      <li>Gerätekennungen oder Nutzungsstatistiken</li>
+    </ul>
+    <p>Wir haben keinerlei Zugriff auf Ihre gespeicherten Inhalte.</p>
+
+    <h2>Lokale Speicherung &amp; iCloud</h2>
+    <p>Alle Lesezeichen, Titel, Beschreibungen und Vorschaubilder werden ausschließlich an zwei Stellen gespeichert:</p>
+    <ul>
+      <li><strong>Auf Ihrem Gerät</strong> — über SwiftData lokal</li>
+      <li><strong>In Ihrem privaten iCloud-Container</strong> — vollständig von Apple unter Ihrer Apple-ID verwaltet</li>
+    </ul>
+    <p>Die Synchronisierung zwischen Ihren Geräten erfolgt über das CloudKit-Framework von Apple. Pinly hat zu keinem Zeitpunkt Zugriff auf diese Daten – weder während der Übertragung noch im gespeicherten Zustand.</p>
+
+    <h2>Drittanbieterdienste</h2>
+    <p>Wenn Sie ein Lesezeichen speichern, kann Pinly ein Vorschaubild oder Metadaten für diese URL abrufen. Diese Netzwerkanfrage erfolgt <strong>direkt von Ihrem Gerät</strong> an den entsprechenden Dienst (z. B. Google Maps, Instagram). Pinly fungiert dabei weder als Mittelsmann noch als Proxy. Es werden keine Daten über unsere Server geleitet.</p>
+    <p>Wenn Sie einen Google-Maps-Ort speichern, können Vorschaudaten von Google-Servern abgerufen werden. Dies unterliegt der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzrichtlinie von Google</a>. Es werden keine genauen Standortdaten an Google gesendet – nur die von Ihnen explizit gespeicherte URL.</p>
+
+    <h2>Keine Werbung oder Analysen</h2>
+    <p>Pinly enthält keine SDKs für Drittanbieterwerbung, keine Analyse-Frameworks (z. B. Firebase, Mixpanel) und keine Absturzberichte-Tools, die Daten außerhalb des Geräts übertragen. Ihre Nutzungsdaten werden nicht an Dritte weitergegeben.</p>
+
+    <h2>Datenschutz für Minderjährige</h2>
+    <p>Pinly erhebt wissentlich keine Daten von Kindern unter 13 Jahren. Da wir grundsätzlich keine personenbezogenen Daten erheben, ist die App konstruktionsbedingt konform.</p>
+
+    <h2>Änderungen dieser Erklärung</h2>
+    <p>Bei wesentlichen Änderungen dieser Datenschutzerklärung aktualisieren wir das Datum „Zuletzt aktualisiert" oben. Die weitere Nutzung der App gilt als Zustimmung zur aktualisierten Richtlinie.</p>
+
+    <div class="contact-box">
+      <h2>Kontakt</h2>
+      <p>Bei Fragen oder Bedenken zu dieser Datenschutzerklärung wenden Sie sich bitte an uns:</p>
+      <p><strong>Entwicklerin:</strong> Rita Wu<br>
+         <strong>E-Mail:</strong> <a href="mailto:pinly.app@icloud.com">pinly.app@icloud.com</a></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <!-- SPANISH                                                             -->
+  <!-- ═══════════════════════════════════════════════════════════════════ -->
+  <section class="lang-section" id="es">
+    <div class="app-header">
+      <div class="app-icon"></div>
+      <div>
+        <h1>Pinly — Política de Privacidad</h1>
+        <p class="updated">Última actualización: mayo de 2026</p>
+      </div>
+    </div>
+
+    <div class="badge">
+      <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg>
+      Privacidad primero — Sus datos permanecen en su dispositivo e iCloud.
+    </div>
+
+    <h2>Descripción general</h2>
+    <p>Pinly ("nosotros", "nuestro" o "la app") es un gestor personal de marcadores. Nos comprometemos a proteger su privacidad. Esta política explica qué datos maneja Pinly, dónde se almacenan y cómo se utilizan.</p>
+
+    <h2>Datos que NO recopilamos</h2>
+    <p>No recopilamos, transmitimos ni almacenamos ningún dato personal en nuestros servidores. Esto incluye:</p>
+    <ul>
+      <li>Su nombre, dirección de correo electrónico o cualquier dato de identidad</li>
+      <li>Sus marcadores, URLs, títulos o notas</li>
+      <li>Identificadores del dispositivo o estadísticas de uso</li>
+    </ul>
+    <p>No tenemos ningún acceso a su contenido guardado.</p>
+
+    <h2>Almacenamiento local e iCloud</h2>
+    <p>Todos los marcadores, títulos, descripciones e imágenes de vista previa se almacenan exclusivamente en dos lugares:</p>
+    <ul>
+      <li><strong>Su dispositivo</strong> — mediante almacenamiento local con SwiftData</li>
+      <li><strong>Su contenedor privado de iCloud</strong> — gestionado íntegramente por Apple con su Apple ID</li>
+    </ul>
+    <p>La sincronización entre sus dispositivos se realiza a través del framework CloudKit de Apple. Pinly no tiene acceso a estos datos ni en tránsito ni en reposo.</p>
+
+    <h2>Servicios de terceros</h2>
+    <p>Al guardar un marcador, Pinly puede obtener una imagen de vista previa o metadatos para esa URL. Esta solicitud de red se origina <strong>directamente desde su dispositivo</strong> hacia el servicio correspondiente (p. ej., Google Maps, Instagram). Pinly no actúa como intermediario ni como proxy. Ningún dato se enruta a través de nuestros servidores.</p>
+    <p>Si guarda una ubicación de Google Maps, los datos de vista previa pueden obtenerse de los servidores de Google. Esto está sujeto a la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>. No se envían datos de ubicación exacta a Google; solo la URL que usted guardó explícitamente.</p>
+
+    <h2>Sin publicidad ni análisis</h2>
+    <p>Pinly no contiene SDKs de publicidad de terceros, frameworks de análisis (p. ej., Firebase, Mixpanel) ni herramientas de informes de fallos que transmitan datos fuera del dispositivo. Sus datos de uso no se comparten con ningún tercero.</p>
+
+    <h2>Privacidad de menores</h2>
+    <p>Pinly no recopila intencionalmente datos de menores de 13 años. Dado que no recopilamos ningún dato personal, la app cumple este requisito por diseño.</p>
+
+    <h2>Cambios en esta política</h2>
+    <p>Si realizamos cambios importantes en esta Política de Privacidad, actualizaremos la fecha de "Última actualización" indicada arriba. El uso continuado de la app implica la aceptación de la política actualizada.</p>
+
+    <div class="contact-box">
+      <h2>Contacto</h2>
+      <p>Si tiene alguna pregunta o inquietud sobre esta Política de Privacidad, contáctenos:</p>
+      <p><strong>Desarrolladora:</strong> Rita Wu<br>
+         <strong>Correo:</strong> <a href="mailto:pinly.app@icloud.com">pinly.app@icloud.com</a></p>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
