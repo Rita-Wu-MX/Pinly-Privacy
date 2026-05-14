@@ -299,19 +299,26 @@
     window.scrollTo({ top: 0, behavior: 'instant' });
   }
 
-  // Auto-switch based on URL hash (e.g. #lang-zh) or browser language
+  // Auto-switch: ?lang=zh  >  #lang-zh  >  navigator.language
   (function () {
     const validLangs = ['en', 'zh', 'de', 'es'];
     let target = 'en';
 
-    const hash = location.hash.replace('#lang-', '');
-    if (validLangs.includes(hash)) {
+    const params = new URLSearchParams(location.search);
+    const qLang  = (params.get('lang') || '').toLowerCase();
+    const hash   = location.hash.replace('#lang-', '').toLowerCase();
+    const nav    = (navigator.language || '').toLowerCase();
+
+    if (validLangs.includes(qLang)) {
+      target = qLang;
+    } else if (validLangs.includes(hash)) {
       target = hash;
-    } else {
-      const nav = (navigator.language || '').toLowerCase();
-      if (nav.startsWith('zh')) target = 'zh';
-      else if (nav.startsWith('de')) target = 'de';
-      else if (nav.startsWith('es')) target = 'es';
+    } else if (nav.startsWith('zh')) {
+      target = 'zh';
+    } else if (nav.startsWith('de')) {
+      target = 'de';
+    } else if (nav.startsWith('es')) {
+      target = 'es';
     }
 
     if (target !== 'en') {
