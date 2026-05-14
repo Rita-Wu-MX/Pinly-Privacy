@@ -298,6 +298,27 @@
     btn.classList.add('active');
     window.scrollTo({ top: 0, behavior: 'instant' });
   }
+
+  // Auto-switch based on URL hash (e.g. #lang-zh) or browser language
+  (function () {
+    const validLangs = ['en', 'zh', 'de', 'es'];
+    let target = 'en';
+
+    const hash = location.hash.replace('#lang-', '');
+    if (validLangs.includes(hash)) {
+      target = hash;
+    } else {
+      const nav = (navigator.language || '').toLowerCase();
+      if (nav.startsWith('zh')) target = 'zh';
+      else if (nav.startsWith('de')) target = 'de';
+      else if (nav.startsWith('es')) target = 'es';
+    }
+
+    if (target !== 'en') {
+      const btn = document.querySelector(`nav button[onclick*="'${target}'"]`);
+      if (btn) switchLang(target, btn);
+    }
+  })();
 </script>
 
 </body>
